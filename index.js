@@ -1,7 +1,7 @@
 let accountKey = "";
 let defaultLanguage = "en";
 
-const url = (productNo, language) => `https://privateapi.tdsmaker.com/api/v2/form/getPublic?appId=${accountKey}&productNo=${productNo}-S&language=${language}`
+const url = (productNo, language) => `https://privateapi.tdsmaker.com/api/v2/form/getPublic?appId=${accountKey}&productNo=${productNo}&language=${language}`
 
 const onItemClick = (e) => {
     const productNo = e.target.getAttribute('data-pn');
